@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Pizza Lovers Club</title>
+</head>
+<body>
+    <h1>Secret Pizza Lovers Club</h1>
+    
+    <p>Fill out this form to join!</p>
+    
+    <form action="results.html" method="get">
+        <label for="username">Your Name:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <fieldset>
+            <legend>Favorite pizza topping?</legend>
+            <input type="radio" id="pep" name="topping" value="pepperoni" required>
+            <label for="pep">Pepperoni</label><br>
+            <input type="radio" id="cheese" name="topping" value="cheese">
+            <label for="cheese">Just Cheese</label><br>
+            <input type="radio" id="veggie" name="topping" value="veggies">
+            <label for="veggie">Veggies</label><br>
+        </fieldset><br>
+
+        <label for="crust">Pick your crust:</label><br>
+        <select id="crust" name="crust">
+            <option value="thin">Thin</option>
+            <option value="thick">Thick</option>
+            <option value="stuffed">Stuffed</option>
+        </select><br><br>
+
+        <label for="comments">Comments: Give us some thoughts, please.</label><br>
+        <textarea id="comments" name="comments" rows="3" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
